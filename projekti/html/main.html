@@ -4,23 +4,41 @@
     <meta charset="UTF-8">
     <title>Projekti</title>
     <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js"></script>
 </head>
-<body>
+<body background="sushi-596930_1920.jpg">
 <div class="topnav">
     <a class="active" href="">Etusivu</a>
     <a class="button" href="#popup1">Tekijät</a>
+    <a class="button" href="#popup2">Sushin voimaa</a>
 </div>
-<h1 class="otsikko">Projekti</h1>
 <div id="popup1" class="overlay">
     <div class="popup">
         <h1>Anna salasana</h1>
-        <input type="password">
-        <input type="submit">
+        <label>
+            <input type="password">
+        </label>
+        <button onclick="toggler(this)" type="button">OK</button>
         <a class="close" href="#">&times</a>
         <div class="content">
-
         </div>
     </div>
 </div>
+<div id="popup2" class="overlay">
+    <div class="popup">
+        <a class="close" href="#">&times</a>
+        <div class="content">
+        </div>
+        <video width="320" height="240" controls>
+            <source src="" type="video/mp4">
+        </video>
+
+    </div>
+</div>
+<h1 class="otsikko">Sushiravintolat kartalla</h1>
+<iframe class="kartta" width="800" height="600"
+src="https://www.openstreetmap.org/export/embed.html?bbox=24.801067113876346%2C60.21580575873854%2C24.814864397048954%2C60.21953078631446&amp;
+layer=mapnik" style="border: 1px solid black"></iframe><br/>
+<small><a href="https://www.openstreetmap.org/#map=17/60.21767/24.80797&amp;layers=N">Näytä isommalla kartalla</a></small>
 </body>
 </html>
