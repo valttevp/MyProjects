@@ -16,6 +16,17 @@ body{
     align-content: center;
     justify-content: center;
 }
+#tekijat{
+    width: 1px;
+    height: 1px;
+    display: block;
+    background-color: white;
+
+}
+#popup3 {
+    display: none;
+    transition: all 0.5s ease-in;
+}
 div {
     width: 1700px;
     height: 300px;
@@ -44,6 +55,7 @@ h1{
     float: none;
     color: #000000;
     text-align: center;
+
     padding: 0;
     font-size: 30px;
 }
@@ -71,6 +83,8 @@ h1{
     visibility: hidden;
     opacity: 0;
 }
+
+
 .overlay:target {
     visibility: visible;
     opacity: 1;
